@@ -2,3 +2,23 @@
   ↳ bin/rails:9
   [1m[35m (32.9ms)[0m  [1m[35mCREATE DATABASE "first_routes_controllers_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-31 14:18:43 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "first_routes_controllers_development" does not exist:
+
+Started POST "/__better_errors/63235082b66a2fd6/variables" for ::1 at 2021-03-31 14:18:43 -0400
+  [1m[35m (215.7ms)[0m  [1m[35mCREATE DATABASE "first_routes_controllers_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (83.7ms)[0m  [1m[35mCREATE DATABASE "first_routes_controllers_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-31 14:22:00 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/danielezekiel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/danielezekiel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:32:47 -0400
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
