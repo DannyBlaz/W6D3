@@ -22,3 +22,185 @@ Started GET "/users" for ::1 at 2021-03-31 14:32:47 -0400
 
 AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
 
+Started GET "/" for ::1 at 2021-03-31 14:38:31 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:40:39 -0400
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (11.8ms)
+Completed 200 OK in 84ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:40:58 -0400
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2021-03-31 14:42:02 -0400
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 98ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:42:18 -0400
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 106ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:42:19 -0400
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 102ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:44:06 -0400
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-03-31 14:45:37 -0400
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2021-03-31 14:47:13 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/favorite_food=pizza" for ::1 at 2021-03-31 14:48:08 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-03-31 14:49:41 -0400
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-03-31 14:49:44 -0400
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?daniel=true" for ::1 at 2021-03-31 14:50:11 -0400
+Processing by UsersController#index as */*
+  Parameters: {"daniel"=>"true"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?sam=false" for ::1 at 2021-03-31 14:50:30 -0400
+Processing by UsersController#index as */*
+  Parameters: {"sam"=>"false"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:53:19 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"param"=>{"user"=>"daniel"}}
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 49ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:53:49 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"user"=>"daniel"}
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 61ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:54:14 -0400
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 58ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:54:28 -0400
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 63ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:54:52 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"param"=>{"user"=>"daniel"}}
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 65ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 14:57:41 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"param"=>{"user"=>"daniel"}}
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 49ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?fav_food=pizza" for ::1 at 2021-03-31 14:59:04 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"param"=>{"user"=>"daniel"}, "fav_food"=>"pizza"}
+  Rendering /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/samanthalilly/.rvm/gems/ruby-2.5.1/gems/railties-5.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 59ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-03-31 15:00:07 -0400
+Processing by UsersController#index as */*
+  Parameters: {"param"=>{"user"=>"daniel"}, "fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2021-03-31 15:00:22 -0400
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-03-31 15:03:16 -0400
+Processing by UsersController#create as */*
+  Parameters: {"food"=>"pizza"}
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2021-03-31 15:04:58 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/1" for ::1 at 2021-03-31 15:05:43 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for ::1 at 2021-03-31 15:06:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
