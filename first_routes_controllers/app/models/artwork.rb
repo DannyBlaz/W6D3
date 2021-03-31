@@ -6,6 +6,7 @@ class Artwork < ApplicationRecord
     validates :image_url, presence: true
     validates :artist_id, presence: true
     
+    #why isn't this working?!?! GITHUB
 
 end
 
