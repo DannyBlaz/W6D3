@@ -16,20 +16,89 @@ ActiveRecord::Base.transaction do
     User.delete_all
     
     sam = User.create(
-        id: 1,
         username: "sam_lilly"
     )
 
     daniel = User.create(
-        id: 2,
         username: "danny_blaz"
     )
 
     ara = User.create(
-        id: 3,
         username: "aratist"
     )
 
+   sam_art1 = Artwork.create(
+       title: :plants,
+       image_url: "www.plants.com",
+       artist_id: sam.id
+    )
+
+    sam_art2 = Artwork.create(
+        title: :trees,
+        image_url: "www.trees.com",
+        artist_id: sam.id
+    )
+
+    sam_art3 = Artwork.create(
+        title: :animals,
+        image_url: "www.animals.com",
+        artist_id: sam.id
+    )
+
+    daniel_art1 = Artwork.create(
+        title: :stallion,
+        image_url: "www.stallion.com",
+        artist_id: daniel.id
+    )
+ 
+    daniel_art2 = Artwork.create(
+         title: :car,
+         image_url: "www.car.com",
+         artist_id: daniel.id
+    )
+ 
+    daniel_art3 = Artwork.create(
+         title: :ruby,
+         image_url: "www.ruby.com",
+         artist_id: daniel.id
+    )
+
+
+    ara_art1 = Artwork.create(
+        title: :canvaspour,
+        image_url: "www.canvaspour.com",
+        artist_id: ara.id
+    ) 
+ 
+    ara_art2 = Artwork.create(
+         title: :largepainting,
+         image_url: "www.largepainting.com",
+         artist_id: ara.id
+    )
+ 
+    ara_art3 = Artwork.create(
+         title: :smallpainting,
+         image_url: "www.smallpainting.com",
+         artist_id: ara.id
+    )
+
+    shares1 = ArtworkShare.create(
+        artwork_id: ara_art2.id,
+        viewer_id: daniel.id
+    )
+
+    shares2 = ArtworkShare.create(
+        artwork_id: daniel_art1.id,
+        viewer_id: sam.id 
+    )
+
+    shares3 = ArtworkShare.create(
+        artwork_id: sam_art3.id,
+        viewer_id: ara.id
+    )
+    
+     
+    
 
 end
 
