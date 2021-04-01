@@ -21,7 +21,15 @@ class Artwork < ApplicationRecord
         through: :artworks,
         source: :viewer
 
+    def self.user_artworks(user_id)
 
+        Artwork
+            .joins(:artist)
+            .joins()
+            .where(users: {id: user_id})
+            .where(artwork_shares: {})
+
+    end
 
 end
 

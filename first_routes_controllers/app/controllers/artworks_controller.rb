@@ -1,6 +1,7 @@
 class ArtworksController < ApplicationController
     def index
         render json: Artwork.all
+        render json: Artwork.user_artworks(params[viewer_id])
     end
 
     def show
